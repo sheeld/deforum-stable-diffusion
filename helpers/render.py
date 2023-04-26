@@ -644,7 +644,7 @@ def render_animation_hybrid_composite(args, anim_args, frame_idx, prev_img, dept
     prev_frame = os.path.join(args.outdir, 'hybridframes', f"prev{frame_idx:05}.jpg")
     prev_img_hybrid = Image.fromarray(prev_img)       
     video_image = Image.open(video_frame)
-    video_image = video_image.resize((args.W, args.H), Image.Resampling.LANCZOS)
+    video_image = video_image.resize((args.W, args.H), Image.LANCZOS)
     hybrid_mask = None
 
     # composite mask types
