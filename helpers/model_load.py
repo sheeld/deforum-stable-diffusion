@@ -175,7 +175,7 @@ def load_model(root, load_on_run_all=True, check_sha256=True, map_location="cuda
             },
         "sadoshi-ai-v0-3.ckpt": {
             'sha256': '4199BCDD147E11328D5F3560301D5A7AB4AC7EEEFBF49DC3EB663CB3E772B9AC',
-            'url': 'https://civitai.com/models/7371/rev-animated',
+            'url': 'https://civitai.com/api/download/models/46846',
             'requires_login': False,
             },
     }
