@@ -219,9 +219,7 @@ def load_model(root, load_on_run_all=True, check_sha256=True, map_location="cuda
             if model_map[root.model_checkpoint]["sha256"] == hash:
                 print("..hash is correct")
             else:
-                print("..hash in not correct")
-                print("..redownloading model")
-                download_model(model_map,root)
+                print("..hash is not correct")
         except:
             print("..could not verify model integrity")
 
